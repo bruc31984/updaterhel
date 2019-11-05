@@ -1,6 +1,7 @@
 ---
 - name: apply updates and restart
   hosts: all
+  become: yes
   tasks:
 
    - name: update the system
